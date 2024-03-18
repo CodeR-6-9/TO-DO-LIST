@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priority To-Do List</title>
+    <link rel="stylesheet" href="Untitled-1.css">
+</head>
+<body>
+    <div class="hero">
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="C:\Users\hride\Desktop\TO DO PROJECT\bg1.mp4" type="video/mp4">
+        </video>
+        <nav>
+            <ul>
+                <li><a href="Untitled-1.html">HOME</a></li>
+                <li><a href="">LOGIN</a></li>
+                <li><a href="reg.html">LOG OUT</a></li>
+                <li><a href="">ABOUT US</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <h2 class="h2pg2">To-Do List</h2><br>
+            <input class="task1" type="text" id="taskInput" placeholder="Enter task description...">
+            <select class="pi" id="priorityInput">
+                <option value="5" >Priority "Very High"</option>
+                <option value="4" >Priority "High"</option>
+                <option value="3">Priority "Moderate"</option>
+                <option value="2" selected>Priority "Not Urgent" </option>
+                <option value="1" >Priority "Optional"</option>
+            </select>
+            <button class="addt" onclick="addTask()">+</button>
+            <ul id="taskList" class="task-list"></ul>
+        </div>
+    </div>
+    <script src="js2.js"></script>
+</body>
+</html>
